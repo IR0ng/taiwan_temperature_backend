@@ -1,4 +1,3 @@
-import { City } from '../entities/City'
 import { Temperature } from '../entities/Temperature'
 
 export default class CityModel {

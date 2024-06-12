@@ -9,9 +9,6 @@ import { Temperature } from './entities/Temperature'
 import express, { Express, NextFunction, Request, Response } from 'express'
 import dataRouter from './data'
 import { ValidationError } from 'express-validation'
-import { Server } from 'socket.io'
-import http from 'http'
-import { ServerToClientEvents, ClientToServerEvents } from './types'
 dotenv.config()
 
 export const createServer = async () => {

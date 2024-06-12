@@ -1,5 +1,4 @@
 import { Request, Response } from 'express'
-import { RESPONSE_CODE } from '../types'
 import CityModel from './data.model'
 
 const { findAll } = new CityModel()
@@ -19,7 +18,7 @@ export const getData: IApi = async (req, res) => {
     })
   } catch (error) {
     res.status(500).send({
-      code: RESPONSE_CODE.UNKNOWN_ERROR,
+      code: 500,
       message: error
     })
     throw error
