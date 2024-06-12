@@ -11,6 +11,7 @@ interface IApi {
 export const getData: IApi = async (req, res) => {
   try {
     const { station } = req.body
+
     const data = await findAll({ station })
     res.status(200).send({
       status: 200,

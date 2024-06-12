@@ -4,5 +4,5 @@ import { getData } from './data.controller'
 const router = express.Router()
 
 router.route('/getData')
-  .get(getData)
+  .post(getData)
 export default router
